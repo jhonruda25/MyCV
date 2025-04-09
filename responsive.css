@@ -1,0 +1,157 @@
+/* Mejoras adicionales para responsive design */
+
+/* Ajustes generales para dispositivos móviles */
+@media (max-width: 576px) {
+    /* Reducir padding general */
+    section {
+        padding: 60px 0;
+    }
+    
+    /* Ajustar tamaños de fuente */
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+    
+    /* Mejorar visualización de elementos 3D en móviles */
+    .profile-container {
+        transform: scale(0.8);
+    }
+    
+    /* Ajustar espaciado en timeline */
+    .timeline-item {
+        margin-bottom: 30px;
+    }
+    
+    /* Mejorar visualización de tarjetas */
+    .education-card, .certification-card {
+        padding: 20px;
+    }
+    
+    /* Ajustar formulario de contacto */
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    /* Mejorar visualización de iconos */
+    .icon-box {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Ajustes para tablets */
+@media (min-width: 577px) and (max-width: 768px) {
+    /* Ajustar hero section */
+    .hero-text h1 {
+        font-size: 2.8rem;
+    }
+    
+    /* Mejorar visualización de elementos 3D */
+    .laptop-3d {
+        transform: scale(0.9) rotate(15deg) translateZ(20px);
+    }
+}
+
+/* Ajustes para pantallas medianas */
+@media (min-width: 769px) and (max-width: 992px) {
+    /* Ajustar distribución de elementos */
+    .about-content, .contact-container {
+        gap: 30px;
+    }
+}
+
+/* Optimizaciones para dispositivos táctiles */
+@media (hover: none) {
+    /* Simplificar efectos hover para dispositivos táctiles */
+    .nav-link:hover::after {
+        width: 0;
+    }
+    
+    .btn:hover {
+        transform: none;
+    }
+    
+    /* Desactivar efectos parallax en dispositivos táctiles */
+    .hero-content {
+        transform: none !important;
+    }
+}
+
+/* Optimizaciones para pantallas de alta resolución */
+@media (min-width: 1921px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+}
+
+/* Mejoras de accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Optimizaciones para orientación landscape en móviles */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 0;
+    }
+    
+    .profile-container {
+        transform: scale(0.7);
+    }
+    
+    .navbar {
+        padding: 10px 0;
+    }
+}
+
+/* Mejoras para impresión */
+@media print {
+    .navbar, .hero-image, .scroll-down, .contact-form, .footer {
+        display: none;
+    }
+    
+    body, html {
+        background: white;
+        color: black;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: none;
+    }
+    
+    section {
+        padding: 20px 0;
+        page-break-inside: avoid;
+    }
+    
+    .neon-text {
+        color: #333;
+        text-shadow: none;
+    }
+    
+    .timeline::before {
+        background: #333;
+    }
+    
+    .timeline-dot {
+        background: #333;
+        box-shadow: none;
+    }
+}
