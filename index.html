@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jhon Marlon Rueda Rondón | Desarrollador Junior</title>
+    <title>Jhon Marlon Rueda Rondón | Desarrollador de Software</title>
+    <meta name="description" content="Portafolio profesional de Jhon Marlon Rueda Rondón. Desarrollador de Software enfocado en .NET, Python, APIs REST, arquitecturas cloud e IA aplicada.">
+    
+    <!-- Open Graph para compartir en LinkedIn/WhatsApp -->
+    <meta property="og:title" content="Jhon Marlon Rueda Rondón | Desarrollador de Software">
+    <meta property="og:description" content="Proyectos de software, arquitecturas escalables y soluciones digitales.">
+    <meta property="og:url" content="https://jhonruda25.github.io/MyCV/">
+    <meta property="og:type" content="website">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
@@ -20,9 +28,10 @@
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link">Inicio</a></li>
                 <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#skills" class="nav-link">Stack Técnico</a></li>
                 <li><a href="#experience" class="nav-link">Experiencia</a></li>
                 <li><a href="#education" class="nav-link">Educación</a></li>
-                <li><a href="#skills" class="nav-link">Habilidades</a></li>
                 <li><a href="#contact" class="nav-link">Contacto</a></li>
             </ul>
             <div class="hamburger">
@@ -38,12 +47,12 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="glitch-text">Jhon Marlon <span class="neon-text">Rueda Rondón</span></h1>
-                    <h2 class="subtitle">Desarrollador Junior en entrenamiento</h2>
-                    <p class="location"><i class="fas fa-map-marker-alt"></i> Bucaramanga, Santander, Colombia</p>
+                    <h1 class="glitch-text">Jhon Marlon <span class="neon-text">Rueda</span></h1>
+                    <h2 class="subtitle">Desarrollador de Software | .NET • Python • Cloud</h2>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Bucaramanga / Floridablanca, Santander, Colombia</p>
                     <div class="cta-buttons">
-                        <a href="#contact" class="btn btn-primary">Contactar</a>
-                        <a href="#about" class="btn btn-secondary">Conocer más</a>
+                        <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                        <a href="#contact" class="btn btn-secondary">Contactar</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -69,25 +78,116 @@
             <h2 class="section-title">Sobre <span class="neon-text">Mí</span></h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>En FOSCAL, lidero la optimización de nuestra plataforma de educación online, facilitando el acceso y la eficiencia en el aprendizaje. Nuestro equipo trabaja incansablemente para asegurar que colaboradores, docentes y estudiantes aprovechen al máximo los recursos educativos. Mis competencias en algoritmos de Machine Learning y comunicación interpersonal han sido cruciales para alcanzar estos objetivos.</p>
-                    <p>Como estudiante de Ingeniería de sistemas en UNAD Colombia, continuo fortaleciendo mi perfil técnico, apoyado en certificaciones relevantes en ciberseguridad y machine learning. Estoy comprometido con la creación de entornos de aprendizaje seguros y vanguardistas, siempre en busca de integrar avances tecnológicos que beneficien el sector educativo.</p>
+                    <p>Desarrollador de software con experiencia en el diseño e implementación de aplicaciones web, optimización de arquitecturas basadas en .NET (C#) y automatización de flujos empresariales en el sector salud (Clínica FOSCAL). Apasionado por la integración de modelos de lenguaje e inteligencia artificial para resolver problemas reales.</p>
+                    <p>Actualmente curso Ingeniería de Sistemas en la UNAD, complementando mi experiencia práctica con certificaciones en Cloud Computing (Azure), ciberseguridad y Machine Learning. Además, soy autor de <em>El Último Archivo</em>, obra enfocada en la reflexión sobre el impacto ético y técnico de la IA generativa.</p>
                 </div>
                 <div class="about-icons">
                     <div class="icon-box">
-                        <i class="fas fa-laptop-code"></i>
-                        <span>Desarrollo</span>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-graduation-cap"></i>
-                        <span>Educación</span>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Seguridad</span>
+                        <i class="fas fa-code"></i>
+                        <span>Backend & APIs</span>
                     </div>
                     <div class="icon-box">
                         <i class="fas fa-brain"></i>
-                        <span>Machine Learning</span>
+                        <span>IA & GenAI</span>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-cloud"></i>
+                        <span>Cloud & DevOps</span>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-database"></i>
+                        <span>Bases de Datos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Proyectos Destacados (Clave para desarrolladores) -->
+    <section id="projects" class="education">
+        <div class="container">
+            <h2 class="section-title">Proyectos <span class="neon-text">Destacados</span></h2>
+            <div class="education-grid">
+                
+                <!-- Proyecto 1 -->
+                <div class="education-card">
+                    <div class="education-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Asistente Técnico con IA</h3>
+                    <p class="education-date">Python • Gemini API / LLMs • FastAPI</p>
+                    <p>Agente inteligente diseñado para soporte técnico y resolución asistida de incidencias, optimizando tiempos de respuesta operativa.</p>
+                    <div style="margin-top: 15px;">
+                        <a href="https://github.com/jhonruda25" target="_blank" class="btn btn-secondary" style="padding: 6px 16px; font-size: 0.8rem;">Ver en GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="education-card">
+                    <div class="education-icon"><i class="fas fa-calculator"></i></div>
+                    <h3>Sistema de Nómina & Gestión</h3>
+                    <p class="education-date">C# • .NET MVC • SQL Server</p>
+                    <p>Módulo para el cálculo automatizado de devengados, deducciones laborales y generación de reportes administrativos conforme a normativa legal.</p>
+                    <div style="margin-top: 15px;">
+                        <a href="https://github.com/jhonruda25" target="_blank" class="btn btn-secondary" style="padding: 6px 16px; font-size: 0.8rem;">Ver en GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="education-card">
+                    <div class="education-icon"><i class="fas fa-book-open"></i></div>
+                    <h3>Plataforma GuiasAI & Publicación</h3>
+                    <p class="education-date">Next.js • Tailwind CSS • Vercel</p>
+                    <p>Portal web complementario a la publicación técnica y literaria sobre riesgos y arquitectura de IA generativa ("El Último Archivo").</p>
+                    <div style="margin-top: 15px;">
+                        <a href="https://a.co/d/0qiy6WM" target="_blank" class="btn btn-secondary" style="padding: 6px 16px; font-size: 0.8rem;">Ver en Amazon <i class="fab fa-amazon"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades (Reorientada a Stack Técnico) -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Stack <span class="neon-text">Tecnológico</span></h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Backend & Arquitectura</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">C# / ASP.NET MVC / .NET Core</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Python (Automatización & Scripts)</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Bases de Datos Relacionales (SQL Server, MySQL)</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">APIs RESTful & ABAP Fundamentals</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Frontend, Cloud & Herramientas</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript (ES6+) / HTML5 / CSS3</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Git & GitHub (CI/CD, Workflows)</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Plataformas Cloud (Azure, Vercel)</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Administración Moodle & Servidores Linux/Windows</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
                     </div>
                 </div>
             </div>
@@ -99,38 +199,28 @@
         <div class="container">
             <h2 class="section-title">Experiencia <span class="neon-text">Profesional</span></h2>
             <div class="timeline">
-                <!-- Clínica FOSCAL - Desarrollador Junior -->
+                
+                <!-- Clínica FOSCAL - Dev -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Desarrollador Junior en entrenamiento</h3>
+                        <h3>Desarrollador Junior</h3>
                         <h4>Clínica FOSCAL</h4>
-                        <p class="timeline-date">Noviembre 2024 - Presente (6 meses)</p>
+                        <p class="timeline-date">Noviembre 2024 - Presente</p>
                         <p class="timeline-location">Floridablanca, Santander, Colombia</p>
+                        <p>Desarrollo y mantenimiento de componentes de software para la plataforma educativa institucional. Implementación de módulos bajo arquitectura MVC, optimización de consultas en base de datos y creación de scripts de soporte técnico automatizado.</p>
                     </div>
                 </div>
 
-                <!-- Clínica FOSCAL - Técnico de sistemas -->
+                <!-- Clínica FOSCAL - Técnico -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Técnico de sistemas</h3>
+                        <h3>Técnico de Sistemas & Plataformas</h3>
                         <h4>Clínica FOSCAL</h4>
-                        <p class="timeline-date">Marzo 2022 - Diciembre 2024 (2 años 10 meses)</p>
-                        <p class="timeline-location">Floridablanca</p>
-                        <p>Garantizar el correcto funcionamiento de la plataforma de educación online, asegurando que todos los usuarios puedan acceder y utilizar los recursos de manera eficiente. Además de asignar y registrar a los colaboradores, pacientes, docentes y estudiantes que forman del convenio hospital docente.</p>
-                    </div>
-                </div>
-
-                <!-- Electricos La Mesa -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Cajero de ventas</h3>
-                        <h4>Electricos La Mesa</h4>
-                        <p class="timeline-date">Abril 2021 - Marzo 2022 (1 año)</p>
-                        <p class="timeline-location">Los Santos, Santander, Colombia</p>
-                        <p>Responsable de la venta, administración y suplemento de artículos eléctricos para construcción y al detal.</p>
+                        <p class="timeline-date">Marzo 2022 - Diciembre 2024</p>
+                        <p class="timeline-location">Floridablanca, Santander</p>
+                        <p>Gestión de infraestructura del LMS, asegurando disponibilidad para más de 1,000 usuarios activos (convenio hospital docente). Automatización de procesos de enrolamiento y reportes de auditoría de usuarios.</p>
                     </div>
                 </div>
 
@@ -138,37 +228,14 @@
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Especialista en sistemas técnicos</h3>
+                        <h3>Especialista en Sistemas Técnicos</h3>
                         <h4>Universidad Santo Tomás</h4>
-                        <p class="timeline-date">Enero 2020 - Octubre 2020 (10 meses)</p>
-                        <p class="timeline-location">Floridablanca, Santander, Colombia</p>
-                        <p>Me desempeñaba en el mantenimiento y reparación a todos los equipos del sector bibliotecario CRAI, también dicté cursos virtuales de excel, hice presentaciones profesionales en powerpoint al sector CAMPUS VIRTUAL dónde fui administrador de la plataforma Moodle de la universidad y ayudaba en el manejo de herramientas digitales para el aprendizaje.</p>
+                        <p class="timeline-date">Enero 2020 - Octubre 2020</p>
+                        <p class="timeline-location">Floridablanca, Santander</p>
+                        <p>Administración del Campus Virtual basado en Moodle, soporte a infraestructura técnica en laboratorios y dictado de capacitaciones técnicas en herramientas digitales.</p>
                     </div>
                 </div>
 
-                <!-- Parador la cañada -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Ventas minoristas</h3>
-                        <h4>Parador la cañada</h4>
-                        <p class="timeline-date">Enero 2018 - Mayo 2019 (1 año 5 meses)</p>
-                        <p class="timeline-location">Los Santos, Santander, Colombia</p>
-                        <p>Era el encargado de la caja, distribución de productos y atención al cliente en el minisupermercado Parador La Cañada.</p>
-                    </div>
-                </div>
-
-                <!-- Profesional independiente -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Instructor de contabilidad</h3>
-                        <h4>Profesional independiente</h4>
-                        <p class="timeline-date">Enero 2018 - Mayo 2019 (1 año 5 meses)</p>
-                        <p class="timeline-location">Piedecuesta, Santander, Colombia</p>
-                        <p>Me desempeñaba en dar clases personalizadas a estudiantes de ultimo grado de bachillerato en el ámbito contable.</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -178,117 +245,38 @@
         <div class="container">
             <h2 class="section-title">Educación y <span class="neon-text">Certificaciones</span></h2>
             <div class="education-grid">
-                <!-- Educación Formal -->
                 <div class="education-card">
-                    <div class="education-icon">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <h3>Universidad Nacional Abierta y a Distancia - UNAD Colombia</h3>
-                    <p>Ingeniería de sistemas</p>
-                    <p class="education-date">Junio 2022 - 2027 (En curso)</p>
+                    <div class="education-icon"><i class="fas fa-university"></i></div>
+                    <h3>Ingeniería de Sistemas</h3>
+                    <p>Universidad Nacional Abierta y a Distancia (UNAD)</p>
+                    <p class="education-date">2022 - 2027 (En curso)</p>
                 </div>
 
                 <div class="education-card">
-                    <div class="education-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>Servicio Nacional de Aprendizaje (SENA)</h3>
-                    <p>Técnico en sistemas</p>
+                    <div class="education-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Técnico en Sistemas</h3>
+                    <p>Servicio Nacional de Aprendizaje (SENA)</p>
                     <p class="education-date">2019 - 2020</p>
                 </div>
 
-                <!-- Certificaciones -->
                 <div class="certification-card">
-                    <div class="certification-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h3>Curso de Introducción a la Nube con Azure</h3>
+                    <div class="certification-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Introducción a la Nube con Microsoft Azure</h3>
                 </div>
 
                 <div class="certification-card">
-                    <div class="certification-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
+                    <div class="certification-icon"><i class="fas fa-code"></i></div>
                     <h3>Fundamentos de Ingeniería de Software</h3>
                 </div>
 
                 <div class="certification-card">
-                    <div class="certification-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Fundamentos de big data</h3>
+                    <div class="certification-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Seguridad Informática y Ciberdefensa</h3>
                 </div>
 
                 <div class="certification-card">
-                    <div class="certification-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Guía para Aprender Seguridad Informática</h3>
-                </div>
-
-                <div class="certification-card">
-                    <div class="certification-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Curso de Análisis de Negocios para Ciencia de Datos</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Habilidades -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Habilidades <span class="neon-text">Principales</span></h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Aptitudes Principales</h3>
-                    <div class="skill-item">
-                        <span class="skill-name">Enseñanza en el aula</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="90"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Profesor cualificado</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="85"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Contabilidad</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="80"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Habilidades Técnicas</h3>
-                    <div class="skill-item">
-                        <span class="skill-name">Administración de plataformas educativas</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="95"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Soporte técnico</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="90"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Machine Learning</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="75"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Seguridad informática</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="80"></div>
-                        </div>
-                    </div>
+                    <div class="certification-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Análisis de Negocios para Data Science</h3>
                 </div>
             </div>
         </div>
@@ -301,16 +289,20 @@
             <div class="contact-container">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <p>3134389495 (Móvil)</p>
-                    </div>
-                    <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <p>jhonmarlon55@hotmail.com</p>
+                        <p><a href="mailto:jhonmarlon55@hotmail.com">jhonmarlon55@hotmail.com</a></p>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-linkedin"></i>
                         <p><a href="https://www.linkedin.com/in/jhonmarlonrr" target="_blank">linkedin.com/in/jhonmarlonrr</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <p><a href="https://github.com/jhonruda25" target="_blank">github.com/jhonruda25</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+57 313 438 9495</p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
@@ -354,13 +346,14 @@
                     <div class="logo">JM<span class="neon-text">RR</span></div>
                 </div>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/jhonmarlonrr" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:jhonmarlon55@hotmail.com"><i class="fas fa-envelope"></i></a>
-                    <a href="tel:3134389495"><i class="fas fa-phone"></i></a>
+                    <a href="https://www.linkedin.com/in/jhonmarlonrr" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/jhonruda25" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:jhonmarlon55@hotmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:3134389495" aria-label="Teléfono"><i class="fas fa-phone"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Jhon Marlon Rueda Rondón. Todos los derechos reservados.</p>
+                <p>&copy; 2026 Jhon Marlon Rueda Rondón. Código abierto y disponible en GitHub.</p>
             </div>
         </div>
     </footer>
